@@ -1,3 +1,8 @@
+nav a{
+    color: white;
+    padding: 10px;
+    display: block;
+}
 main {
     max-width: 840px; 
 }
@@ -13,6 +18,9 @@ aside {
 aside img {
     width: 200px;   
     height: auto;  
+}
+h1{
+    color: steelblue;
 }
 main img {
     width: 150px;
