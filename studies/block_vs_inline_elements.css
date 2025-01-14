@@ -1,0 +1,56 @@
+/* Basic styling for better visualization */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Styling for block-level elements */
+h1, h2, p, div, aside, main, footer, section, header {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Styling for inline elements */
+span, strong, a, button, img {
+    border: 1px dashed #999;
+    padding: 2px;
+}
+
+/* Additional styling for code elements */
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Styling for images */
+img {
+    display: block; /* Makes the image behave like a block element */
+    margin: 10px 0;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
