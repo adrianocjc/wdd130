@@ -19,6 +19,8 @@ p {
 .sociallinks a img {
     text-decoration: none;
     border: none;
+    width: 40px; 
+    height: auto; 
 }
 
 body {
