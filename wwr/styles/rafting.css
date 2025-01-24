@@ -1,0 +1,79 @@
+/* Define CSS variables in :root pseudo-class */
+:root {
+    --primary-color: #733634;
+    --secondary-color: #484A4D;
+    --accent1-color: #4F829A;
+    --accent2-color: #D7EDF8;
+  }
+  
+  /* Style headings and paragraphs */
+  h1, h2, p {
+    color: var(--primary-color);
+    font-family: 'Merriweather', serif;
+  }
+  
+  p {
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Remove underline from social media image links */
+  .sociallinks a img {
+    text-decoration: none;
+    border: none; /* Ensure no border around images */
+  }
+  
+  /* Limit the width of the entire page */
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Style the Hero Container using Position Absolute */
+  .hero {
+    position: relative;
+    background-image: url('wwr/images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+  }
+  
+  .hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Background with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .hero article img {
+    float: right;
+    margin-left: 20px;
+    max-width: 150px; /* Limit size of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .hero article p {
+    margin: 0;
+    color: var(--accent2-color);
+  }
+  
