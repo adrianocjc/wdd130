@@ -18,11 +18,14 @@ p {
     margin-bottom: 0; /* Removes the bottom margin */
 }
 
-.sociallinks a img {
+.sociallinks a {
     text-decoration: none;
+}
+
+.sociallinks a img {
     border: none;
     width: 40px; 
-    height: auto; 
+    height: 40px; 
 }
 
 body {
