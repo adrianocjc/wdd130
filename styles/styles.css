@@ -43,10 +43,14 @@ h1{
     border-bottom: 1px solid steelblue;
     padding-bottom: 20px;
 }
-main img {
-    width: 150px;
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+}
+.profile img {
+    width: 200px;   
     height: auto;
-    flex: 0 0 auto;
 }
 p {
     padding: 0;
