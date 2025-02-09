@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting | Contact Us</title>
     <meta name="description" content="Adriano Costa's BYU-Idaho WDD 130 Contact Us Page">
     <meta name="author" content="Adriano Costa">
@@ -61,18 +61,18 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <fieldset>
+                <fieldset id="purpose-fieldset">
                     <legend>Purpose of Message:</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
                         General Inquiry
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
                         Reservation Question
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
                         Website Suggestion
                     </label>
                 </fieldset>
@@ -80,8 +80,8 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 
-                <label>
-                    <input type="checkbox" name="newsletter">
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
                 
