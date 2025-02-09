@@ -179,8 +179,20 @@ p {
     text-align: center;
 }
 
-.team-grid img {
-    width: 100%;
+.employee1 img{
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.employee2 img{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.employee3 img{
+    width: 20%;
     height: auto;
     border-radius: 50%;
 }
