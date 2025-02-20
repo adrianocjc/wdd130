@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #4A1B1B; /* Darker shade for better contrast */
-    --secondary-color: #2C2E30; /* Darker shade for better contrast */
-    --accent1-color: #266582; /* Slightly adjusted for better contrast */
-    --accent2-color: #D7EDF8; /* This color has good contrast */
+    --primary-color: #2A0F0F; /* Darker shade for better contrast */
+    --secondary-color: #1A1C1E; /* Darker shade for better contrast */
+    --accent1-color: #1A4D66; /* Darker shade for better contrast */
+    --accent2-color: #E8F5FA; /* Lighter shade for better contrast */
 }
 
 body {
