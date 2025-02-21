@@ -41,6 +41,7 @@ body {
     padding: 20px;
     text-align: justify;
 }
+
 .adventure-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -509,7 +510,7 @@ img[loading="lazy"].loaded {
     opacity: 1;
 }
 
-/* Newsletter Form */
+
 .newsletter-form {
     max-width: 600px;
     margin: 20px auto;
@@ -554,7 +555,46 @@ img[loading="lazy"].loaded {
     background-color: #1a4d66;
 }
 
-/* Call to Action Buttons */
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item h3 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.grid-item p {
+    margin: 0;
+    color: var(--secondary-color);
+    line-height: 1.6;
+    padding: 20px;
+    text-align: justify;
+}
+
+.grid-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 4px solid var(--accent1-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 .btn-primary {
     display: inline-block;
     padding: 12px 24px;
@@ -583,4 +623,55 @@ img[loading="lazy"].loaded {
 .btn-secondary:hover {
     background-color: var(--accent1-color);
     color: white;
+}
+
+/* Trip Table Styles */
+.trip-table {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.trip-table th {
+    background-color: var(--accent1-color);
+    color: white;
+    font-weight: 600;
+}
+
+.trip-table tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.trip-table td {
+    color: var(--secondary-color);
+}
+
+.trip-table td:last-child {
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+@media (max-width: 768px) {
+    .trip-table {
+        overflow-x: auto;
+        display: block;
+    }
 }
