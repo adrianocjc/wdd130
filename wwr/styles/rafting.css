@@ -595,34 +595,67 @@ img[loading="lazy"].loaded {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
+.cta-section {
+    padding: 40px 20px;
+    background-color: var(--accent2-color);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: subtleBlink 3s infinite;
+}
+
+@keyframes subtleBlink {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(26, 77, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(26, 77, 102, 0);
+    }
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .btn-primary {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 15px 30px;
     background-color: var(--accent1-color);
     color: white;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .btn-primary:hover {
     background-color: #1a4d66;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .btn-secondary {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: white;
     color: var(--accent1-color);
-    border: 1px solid var(--accent1-color);
+    border: 2px solid var(--accent1-color);
     text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.3s;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .btn-secondary:hover {
     background-color: var(--accent1-color);
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 /* Trip Table Styles */
